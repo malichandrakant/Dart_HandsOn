@@ -1,0 +1,20 @@
+// Base class
+class Animal {
+  void eat() {
+    print("Animal is eating");
+  }
+}
+
+// Derived class (inherits from Animal)
+class Dog extends Animal {
+  void bark() {
+    print("Dog is barking");
+  }
+}
+
+void main() {
+  var dog = Dog();
+
+  dog.eat();   // Inherited from Animal
+  dog.bark();  // Defined in Dog
+}
